@@ -190,11 +190,21 @@ a:hover {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   transition: var(--transition);
   overflow: hidden;
+   display: flex;
+  flex-direction: column;
 }
 
 .service-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+.service-card .card-footer {
+  margin-top: auto;
+}
+
+.service-card .card-body {
+  display: flex;
+  flex-direction: column;
 }
 
 .service-icon {
@@ -216,7 +226,8 @@ a:hover {
 .service-features {
   list-style: none;
   padding: 0;
-  margin: 20px 0 0;
+  margin: 20px 0 0
+  margin-top: auto;
 }
 
 .service-features li {
